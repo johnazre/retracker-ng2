@@ -6,8 +6,12 @@
   <base href="/">
   {{content-for 'head'}}
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="http://bootswatch.com/cosmo/bootstrap.css" media="screen" title="no title" charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Bootstrap -->
+   <link rel="stylesheet" type="text/css" href="http://bootswatch.com/paper/bootstrap.min.css">
+   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Service worker support is disabled by default.
        Install the worker script and uncomment to enable.
@@ -34,5 +38,8 @@
       System.import('main');
     }).catch(console.error.bind(console));
   </script>
+
+
+
 </body>
 </html>
