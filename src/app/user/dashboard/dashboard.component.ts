@@ -4,9 +4,9 @@ import 'rxjs/Rx';
 
 
 @Component({
-  templateUrl: 'app/home/home.component.html',
+  templateUrl: 'app/home/dashboard.component.html',
 })
 
-export class LoginComponent {
-  pageTitle: string = "Login/Signup Page"
+export class DashboardComponent {
+  pageTitle: string = "Dashboard"
 }

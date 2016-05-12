@@ -3,7 +3,6 @@ import { Routes, ROUTER_DIRECTIVES } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './home/login.component';
-import { ClientsComponent } from './clients/clients.component';
 
 
 @Component({
@@ -34,7 +33,6 @@ import { ClientsComponent } from './clients/clients.component';
 @Routes([
     // these are our two routes
     { path: '/', component: HomeComponent },
-    { path: '/clients', component: ClientsComponent },
     { path: '/login', component: LoginComponent }
 ])
 

@@ -17,6 +17,6 @@ describe('App: RetrackerNg2', () => {
 
   it('should have as title \'retracker-ng2 works!\'',
       inject([RetrackerNg2AppComponent], (app: RetrackerNg2AppComponent) => {
-    expect(app.title).toEqual('retracker-ng2 works!');
+    expect(app.pageTitle).toEqual('RETracker');
   }));
 });
