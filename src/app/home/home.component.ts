@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import 'rxjs/Rx';
 
-import LoginComponent from './login.component'
+import { LoginComponent } from './login.component';
 
 @Component({
   templateUrl: 'app/home/home.component.html',
