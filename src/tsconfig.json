@@ -14,5 +14,9 @@
     "sourceMap": true,
     "target": "es5",
     "inlineSources": true
-  }
+  },
+  "files": [
+    "retracker-ng2.component.ts",
+    "typings.d.ts"
+  ]
 }
