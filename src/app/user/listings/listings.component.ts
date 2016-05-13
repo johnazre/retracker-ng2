@@ -4,7 +4,7 @@ import 'rxjs/Rx';
 
 
 @Component({
-  templateUrl: 'app/home/listings.component.html',
+  templateUrl: 'app/user/listings/listings.component.html',
 })
 
 export class ListingsComponent {

@@ -5,11 +5,7 @@ import { IClient } from './client';
 
 @Component({
   selector: 'simplre-clients',
-  template: `
-    <div>
-      Clients Page
-   </div>
-   `
+  templateUrl: 'app/user/clients/clients.component.html'
  })
 
 export class ClientsComponent {

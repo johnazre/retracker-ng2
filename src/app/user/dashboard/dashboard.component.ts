@@ -4,7 +4,7 @@ import 'rxjs/Rx';
 
 
 @Component({
-  templateUrl: 'app/home/dashboard.component.html',
+  templateUrl: 'app/user/dashboard/dashboard.component.html',
 })
 
 export class DashboardComponent {

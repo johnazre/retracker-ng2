@@ -15,8 +15,7 @@ export class LoginComponent {
   }
 
   login(event){
-    console.log(event)
-    console.log(this.router)
+    this.router.navigate(['/user'])
   }
 
   pageTitle: string = "Login/Signup Page"

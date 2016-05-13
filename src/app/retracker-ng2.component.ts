@@ -3,6 +3,7 @@ import { Routes, ROUTER_DIRECTIVES } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './home/login.component';
+import { UserComponent } from './user/user.component';
 
 
 @Component({
@@ -41,7 +42,8 @@ import { LoginComponent } from './home/login.component';
 @Routes([
     // these are our two routes
     { path: '/', component: HomeComponent },
-    { path: '/login', component: LoginComponent }
+    { path: '/login', component: LoginComponent },
+    { path: '/user', component: UserComponent }
 ])
 
 export class RetrackerNg2AppComponent {
