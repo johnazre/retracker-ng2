@@ -26,10 +26,6 @@ import { LoginComponent } from './home/login.component';
           <ul class="nav navbar-nav">
             <li><a [routerLink]="['/']">Home</a></li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a [routerLink]="['/login']">Login</a></li>
-            <li><a [routerLink]="['/login']">Sign Up</a></li>
-          </ul>
         </div>
       </div>
     </nav>
