@@ -4,7 +4,7 @@ import 'rxjs/Rx';
 
 
 @Component({
-  templateUrl: 'app/home/todos.component.html',
+  templateUrl: 'app/user/dashboard/todos/todos.component.html',
 })
 
 export class TodosComponent {

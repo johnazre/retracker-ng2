@@ -15,7 +15,7 @@ export class LoginComponent {
   }
 
   login(event){
-    this.router.navigate(['/user'])
+    this.router.navigate(['/user/dashboard'])
   }
 
   pageTitle: string = "Login/Signup Page"
