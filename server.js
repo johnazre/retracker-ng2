@@ -4,7 +4,7 @@ var cors = require('cors');
 var mongoose = require('mongoose');
 
 var app = express();
-var port = 8000;
+var port = process.env.PORT || 8000;
 
 //-----------Importing Controllers-----------//
 var ListingCtrl = require('./server_assets/Controllers/ListingCtrl');
