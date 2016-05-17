@@ -19,6 +19,7 @@
     "@angular/platform-browser": "2.0.0-rc.1",
     "@angular/platform-browser-dynamic": "2.0.0-rc.1",
     "@angular/router": "2.0.0-rc.1",
+    "@angular/http": "2.0.0-rc.1",
     "body-parser": "^1.15.1",
     "cors": "^2.7.1",
     "es6-shim": "^0.35.0",
