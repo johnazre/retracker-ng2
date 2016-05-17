@@ -4,13 +4,12 @@ import { IPurchase } from './purchase';
 import { PurchaseService } from './purchases.service';
 
 
-
 @Component({
   templateUrl: 'app/user/purchases/purchases.component.html',
   providers: [PurchaseService]
 })
 
-export class PurchaseComponent implements OnInit {
+export class PurchasesComponent implements OnInit {
   purchases: string[];
 
   constructor(private purchaseService: PurchaseService){ }

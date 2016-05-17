@@ -20,5 +20,5 @@ export class ListingsComponent implements OnInit {
     .subscribe(listings => this.listings = listings);
   }
 
-  pageTitle: string = "Clients Page"
+  pageTitle: string = "Listings Page"
 }
