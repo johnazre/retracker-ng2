@@ -15,10 +15,10 @@
             </thead>
           </table>
           <div class="list-group">
-              <a href="#" class="list-group-item">
+              <a *ngFor="let client of clients" href="#" class="list-group-item">
                 <div class="row">
                   <div class="col-xs-4">
-                    Dave Blanchett
+                    {{client.name}}
                   </div>
                   <div class="col-xs-4 text-center" style="padding:0;">
                     555-555-5555
@@ -28,7 +28,7 @@
                   </div>
                 </div>
               </a>
-              <a href="#" class="list-group-item">
+              <!-- <a href="#" class="list-group-item">
                 <div class="row">
                   <div class="col-xs-4">
                     Warren Cook
@@ -66,7 +66,7 @@
                     bryan@example.com
                   </div>
                 </div>
-              </a>
+              </a> -->
           </div>
         </div>
       </div>
