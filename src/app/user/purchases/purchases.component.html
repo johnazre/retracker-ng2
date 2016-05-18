@@ -1,1 +1,69 @@
-{{pageTitle}}
+<h3>{{pageTitle}}</h3>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="panel panel-default">
+        <div class="panel-heading">Under Contract</div>
+        <div class="panel-body">
+          <table class="table">
+            <thead >
+              <tr>
+                <th id="th-one">Address</th>
+                <th id="th-two" style="padding=0;">Price</th>
+                <th id="th-three" class="text-center" style="padding-right:18px;padding-left:0">Buyers</th>
+              </tr>
+            </thead>
+          </table>
+          <div class="list-group">
+              <a *ngFor="let listing of listings" href="#" class="list-group-item">
+                <div class="row">
+                  <div class="col-xs-4">
+                    {{listing.address}}
+                  </div>
+                  <div class="col-xs-4 text-center" style="padding:0;">
+                    {{listing.listPrice}}
+                  </div>
+                  <div class="col-xs-4 text-center" style="padding:0">
+                    {{listing.client.name}}
+                  </div>
+                </div>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">This Week</div>
+        <div class="panel-body">
+          <ul class="list-group">
+            <button type="button" class="list-group-item">
+              <span class="badge">3</span>
+              Upcoming Inspections
+            </button>
+            <button type="button" class="list-group-item">
+              <span class="badge">7</span>
+              Closings
+            </button>
+            <button type="button" class="list-group-item">
+              <span class="badge">2</span>
+              Overdue Checklist Items
+            </button>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">Resources</div>
+        <div class="panel-body">
+          <ul class="list-group">
+            <li>Something</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
