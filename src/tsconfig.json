@@ -17,6 +17,8 @@
   },
   "files": [
     "retracker-ng2.component.ts",
-    "typings.d.ts"
+    "typings.d.ts",
+    "listing-add.component.ts"
+
   ]
 }

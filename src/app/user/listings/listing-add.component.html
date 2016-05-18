@@ -1,0 +1,15 @@
+<form class="" (ngSubmit)="consoleIt(f.value)" #f="ngForm">
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" class="form-control" required ngControl="name">
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="text" class="form-control" ngControl="email">
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone</label>
+    <input type="text" class="form-control" ngControl="phone">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
