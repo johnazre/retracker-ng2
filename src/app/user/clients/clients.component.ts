@@ -2,12 +2,13 @@ import { Component, OnInit } from "@angular/core";
 import 'rxjs/Rx';
 import { IClient } from './client';
 import { ClientService } from './clients.service';
-
+import { ClientAdd } from './client-add.component'
 
 @Component({
   selector: 'simplre-clients',
   templateUrl: 'app/user/clients/clients.component.html',
-  providers: [ClientService]
+  providers: [ClientService],
+  directives: [ClientAdd]
  })
 
 export class ClientsComponent implements OnInit {

@@ -8,16 +8,28 @@
     <input type="text" class="form-control" ngControl="listPrice">
   </div>
   <div class="form-group">
-    <label for="name">Name</label>
-      <select ngControl='name'>
-        <option *ngFor="let client of clients">
+    <label for="name">Client</label>
+      <select ngControl='client'>
+        <option *ngFor="let client of clients" [value]="client._id">
           {{client.name}}
         </option>
       </select>
   </div>
   <div class="form-group">
     <label for="status">Status</label>
-    <input type="text" class="form-control" ngControl="status">
+    <select ngControl='client'>
+      <option *ngFor="let s of status" [value]="s">
+        {{s}}
+      </option>
+    </select>  
+  </div>
+  <div class="form-group">
+    <label for="source">Source</label>
+    <select ngControl='client'>
+      <option *ngFor="let r of source" [value]="r">
+        {{r}}
+      </option>
+    </select>  
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
 </form>

@@ -19,6 +19,21 @@ export class ListingAdd implements OnInit{
   listings: any;
   clients: IClient;
   
+  status: string[] = [
+      'Pre-signed',
+      'Active',
+      'Pending',
+      'Closed',
+      'Cancelled'
+    ];
+    
+    source: string[] = [
+      'Friend',
+      'Family',
+      'Lead Website',
+      'Other'
+    ];
+  
   
   constructor(private listingService: ListingService, 
               private clientService: ClientService){ }
