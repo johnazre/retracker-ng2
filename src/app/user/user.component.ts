@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Routes, Router, ROUTER_DIRECTIVES } from '@angular/router';
 import 'rxjs/Rx';
 
+import { ClientService } from './clients/clients.service';
 import { DashboardComponent } from './dashboard/dashboard.component'
 import { ClientsComponent } from './clients/clients.component'
 import { ListingsComponent } from './listings/listings.component'
@@ -11,7 +12,8 @@ import { PurchasesComponent } from './purchases/purchases.component'
   selector: 'retracker-user',
   templateUrl: 'app/user/user.component.html',
   styleUrls: ['app/user/user.component.css'],
-  directives: [ROUTER_DIRECTIVES]
+  directives: [ROUTER_DIRECTIVES],
+  providers: [ClientService]
 })
 
 @Routes([
