@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col-md-8">
       <div class="panel panel-default">
-        <div class="panel-heading">Under Contract</div>
+        <div class="panel-heading">Active Purchases</div>
         <div class="panel-body">
           <table class="table">
             <thead >
@@ -15,16 +15,16 @@
             </thead>
           </table>
           <div class="list-group">
-              <a *ngFor="let listing of listings" href="#" class="list-group-item">
+              <a *ngFor="let purchase of purchases" href="#" class="list-group-item">
                 <div class="row">
                   <div class="col-xs-4">
-                    {{listing.address}}
+                    {{purchase.address}}
                   </div>
                   <div class="col-xs-4 text-center" style="padding:0;">
-                    {{listing.listPrice}}
+                    {{purchase.listPrice}}
                   </div>
                   <div class="col-xs-4 text-center" style="padding:0">
-                    {{listing.client.name}}
+                    {{purchase.client.name}}
                   </div>
                 </div>
               </a>
@@ -55,13 +55,11 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
       <div class="panel panel-default">
-        <div class="panel-heading">Resources</div>
+        <div class="panel-heading">Add Purchase</div>
         <div class="panel-body">
-          <ul class="list-group">
-            <li>Something</li>
-          </ul>
+          <purchase-add></purchase-add>
         </div>
       </div>
     </div>

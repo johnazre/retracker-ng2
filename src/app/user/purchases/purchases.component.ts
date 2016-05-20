@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import 'rxjs/Rx';
 import { IPurchase } from './purchase';
 import { PurchaseService } from './purchases.service';
+import { PurchaseAdd } from './purchase-add.component';
 
 
 @Component({
   templateUrl: 'app/user/purchases/purchases.component.html',
-  providers: [PurchaseService]
+  providers: [PurchaseService],
+  directives: [PurchaseAdd]
 })
 
 export class PurchasesComponent implements OnInit {
