@@ -30,7 +30,7 @@
             <thead >
               <tr>
                 <th id="th-one" class="text-center" style="padding-left:40px;">Task Name</th>
-                <th id="th-two" class="text-right" style="padding=0;">Assigned To</th>
+                <th id="th-two" class="text-right" style="padding=0;">Related To</th>
                 <th id="th-three" class="text-right" style="padding-right:18px;padding-left:0;">Due Date</th>
               </tr>
             </thead>
@@ -98,40 +98,24 @@
       <div class="panel panel-default">
         <div class="panel-heading">Active Listings</div>
         <div class="panel-body">
-          <ul class="list-group">
-            <button type="button" class="list-group-item">
-              <span class="badge">John Smith</span>
-              123 Main Street
-            </button>
-            <button type="button" class="list-group-item">
-              <span class="badge">David Wright</span>
-              2834 Camino Blanchett
-            </button>
-            <button type="button" class="list-group-item">
-              <span class="badge">Sarah Cassell</span>
-              1692 Calle Plateau
-            </button>
+          <ul class="list-group" >
+            <a class="list-group-item" *ngFor="let listing of listings">
+              <span class="badge">{{listing.client.name}}</span>
+              {{listing.address}}
+            </a>
           </ul>
         </div>
       </div>
     </div>
     <div class="col-md-6">
       <div class="panel panel-default">
-        <div class="panel-heading">Under Contract</div>
+        <div class="panel-heading">Active Purchase Contracts</div>
         <div class="panel-body">
           <ul class="list-group">
-            <button type="button" class="list-group-item">
-              <span class="badge">Jane Nottingham</span>
-              2258 W Blake Lane
-            </button>
-            <button type="button" class="list-group-item">
-              <span class="badge">Peter Hausen</span>
-              9124 E Spearhead Lake Drive
-            </button>
-            <button type="button" class="list-group-item">
-              <span class="badge">Hannah Seltan</span>
-              8431 S 26th Place
-            </button>
+            <a class="list-group-item" *ngFor="let purchase of purchases">
+              <span class="badge">{{purchase.client.name}}</span>
+              {{purchase.address}}
+            </a>
           </ul>
         </div>
       </div>
