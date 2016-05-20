@@ -8,7 +8,7 @@ export class TodoService {
   constructor(private http: Http) {}
 
   getTodos() {
-    return this.http.get('http://localhost:8000/api/todo')
+    return this.http.get('http://localhost:8000/api/task')
     .map((res: Response) => res.json());
   }
 
