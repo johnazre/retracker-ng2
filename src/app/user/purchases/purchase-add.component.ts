@@ -21,19 +21,10 @@ export class PurchaseAdd implements OnInit{
   
   status: string[] = [
       'Pre-signed',
-      'Active',
       'Pending',
       'Closed',
       'Cancelled'
     ];
-    
-    source: string[] = [
-      'Friend',
-      'Family',
-      'Lead Website',
-      'Other'
-    ];
-  
   
   constructor(private purchaseService: PurchaseService, 
               private clientService: ClientService){ }
@@ -43,13 +34,13 @@ export class PurchaseAdd implements OnInit{
     .subscribe(clients => this.clients = clients);
   }
   
-   addpurchase(form: any){
+   addPurchase(form: any){
      this.purchase = form;     
      this.purchaseService.addPurchase(this.purchase)
     //  .subscribe(newpurchase => this.newpurchase = newpurchase);
     .then(
       purchases => this.purchases = purchases,
-      error => console.log(error));
+      error => console.log(JSON.parse(error._body)))
 
    }
   

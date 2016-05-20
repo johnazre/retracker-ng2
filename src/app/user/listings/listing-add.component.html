@@ -17,17 +17,9 @@
   </div>
   <div class="form-group">
     <label for="status">Status</label>
-    <select ngControl='client'>
+    <select ngControl='status'>
       <option *ngFor="let s of status" [value]="s">
         {{s}}
-      </option>
-    </select>  
-  </div>
-  <div class="form-group">
-    <label for="source">Source</label>
-    <select ngControl='client'>
-      <option *ngFor="let r of source" [value]="r">
-        {{r}}
       </option>
     </select>  
   </div>

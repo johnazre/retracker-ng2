@@ -9,7 +9,7 @@
             <thead >
               <tr>
                 <th id="th-one">Address</th>
-                <th id="th-two" style="padding=0;">Price</th>
+                <th id="th-two" class="text-center">Price</th>
                 <th id="th-three" class="text-center" style="padding-right:18px;padding-left:0">Owners</th>
               </tr>
             </thead>
@@ -21,7 +21,7 @@
                     {{listing.address}}
                   </div>
                   <div class="col-xs-4 text-center" style="padding:0;">
-                    {{listing.listPrice}}
+                    ${{listing.listPrice}}
                   </div>
                   <div class="col-xs-4 text-center" style="padding:0">
                     {{listing.client.name}}

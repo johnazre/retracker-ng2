@@ -6,10 +6,10 @@
         <div class="panel-heading">Active Purchases</div>
         <div class="panel-body">
           <table class="table">
-            <thead >
+            <thead>
               <tr>
                 <th id="th-one">Address</th>
-                <th id="th-two" style="padding=0;">Price</th>
+                <th id="th-two" class="text-center">Current Offer Price</th>
                 <th id="th-three" class="text-center" style="padding-right:18px;padding-left:0">Buyers</th>
               </tr>
             </thead>
@@ -21,7 +21,7 @@
                     {{purchase.address}}
                   </div>
                   <div class="col-xs-4 text-center" style="padding:0;">
-                    {{purchase.listPrice}}
+                    ${{purchase.offerPrice}}
                   </div>
                   <div class="col-xs-4 text-center" style="padding:0">
                     {{purchase.client.name}}
