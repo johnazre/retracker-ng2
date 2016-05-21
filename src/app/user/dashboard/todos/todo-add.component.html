@@ -1,0 +1,27 @@
+<form class="" (ngSubmit)="addTodo(f.value)" #f="ngForm">
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text" class="form-control" required ngControl="title">
+  </div>
+  <div class="form-group">
+    <label for="listPrice">Description</label>
+    <input type="text" class="form-control" ngControl="description">
+  </div>
+  <div class="form-group">
+    <label for="name">Related to: </label>
+      <select ngControl='relatedTo'>
+        <option *ngFor="let client of clients" [value]="client._id">
+          {{client.name}}
+        </option>
+      </select>
+  </div>
+  <div class="form-group">
+    <label for="status">Progress</label>
+    <select ngControl='status'>
+      <option *ngFor="let p of progress" [value]="p">
+        {{p}}
+      </option>
+    </select>  
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
